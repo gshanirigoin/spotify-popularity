@@ -9,15 +9,25 @@ wheels/
 # Virtual environments
 .venv
 
-#Folders
+# Datos de Kaggle (no se redistribuyen)
 data/
-src/
-
-
-#Other files
 data.zip
+
+# Enunciado de la tarea
 instructions_a2_spotifypopularity.docx
 
+# Submissions: se sube solo el registro, no los CSV
+outputs/*.csv
+!outputs/submissions_log.csv
 
+# Archivos generados por las librerías
+catboost_info/
+experiments/.cache/
+
+# Sistema y Office
 .DS_Store
 ~$*
+
+#Other files
+spotify_gshan_irigoin.ipynb
+

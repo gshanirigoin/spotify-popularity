@@ -1,0 +1,10 @@
+archivo,modelo,CV_RMSE,RMSE_train_test,fecha,params
+submission_ens_1.csv,Ensemble,8.098877012858667,7.918787001818318,2026-11-22 12:54,"{'members': ['XGBoost', 'LightGBM', 'CatBoost'], 'weights': {'XGBoost': np.float64(0.516), 'LightGBM': np.float64(0.246), 'CatBoost': np.float64(0.239)}}"
+submission_lr_1.csv,LinearRegression,11.51175900395366,11.292917143782354,2026-11-22 12:54,{}
+submission_dt_1.csv,DecisionTree,9.41696962439335,9.08397549855678,2026-11-22 12:55,"{'model__max_depth': 11, 'model__max_features': 0.5, 'model__min_samples_leaf': 56}"
+submission_lgbm_1.csv,LightGBM,8.195476781461386,8.015117269213045,2026-11-22 12:55,"{'model__colsample_bytree': np.float64(0.8963125304316416), 'model__learning_rate': np.float64(0.022247782919033572), 'model__min_child_samples': 43, 'model__n_estimators': 1021, 'model__num_leaves': 198, 'model__reg_lambda': np.float64(0.002327082098144046), 'model__subsample': np.float64(0.8226919925898581)}"
+submission_cat_1.csv,CatBoost,8.198764472580171,7.994268495159349,2026-11-22 12:56,"{'model__depth': 8, 'model__iterations': 1387, 'model__l2_leaf_reg': np.float64(1.9750038035114694), 'model__learning_rate': np.float64(0.041363360445693664)}"
+submission_rf_1.csv,RandomForest,8.30740987417784,8.136173510985577,2026-11-22 12:57,"{'n_estimators': 200, 'max_features': 0.5167448171879894, 'min_samples_leaf': 3, 'max_depth': 40, 'max_samples': None}"
+submission_xgb_1.csv,XGBoost,8.122148704528808,7.943028450012207,2026-11-22 12:58,"{'n_estimators': 2987, 'learning_rate': 0.005608739816148828, 'max_depth': 9, 'min_child_weight': 1.1744733196938295, 'subsample': 0.8678525723156119, 'colsample_bytree': 0.6312890006768803, 'reg_lambda': 0.002529281325567037, 'reg_alpha': 3.397857499986614, 'gamma': 0.19955015395248288}"
+submission_tabpfn_1.csv,TabPFN,,7.822883550458867,2026-11-22 14:00,
+submission_ens_tabpfn_1.csv,Ensemble + TabPFN,,7.79873071835128,2026-11-22 14:00,

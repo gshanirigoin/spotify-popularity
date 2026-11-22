@@ -1,24 +1,24 @@
 [project]
 name = "spotify"
 version = "0.1.0"
-description = "Add your description here"
+description = "Predicción de la popularidad de canciones de Spotify (regresión, RMSE) con pipelines de scikit-learn, boosting y TabPFN"
 readme = "README.md"
 authors = [
     { name = "Gshan Irigoin", email = "gshan.irigoin@pucp.pe" }
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "catboost>=1.2.10",
     "ipykernel>=7.4.0",
     "lightgbm>=4.7.0",
     "matplotlib>=3.11.2",
     "numpy>=2.5.5",
+    "optuna>=5.1.0",
     "pandas>=3.1.1",
     "scikit-learn>=1.9.1",
+    "tabpfn>=10.2.0",
     "xgboost>=3.4.1",
 ]
-
-[project.scripts]
-spotify = "spotify:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
